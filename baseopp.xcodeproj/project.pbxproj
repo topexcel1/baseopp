@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE230E381CF8218A00DD0D2C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE230E351CF8218A00DD0D2C /* FBSDKCoreKit.framework */; };
+		CE230E391CF8218A00DD0D2C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE230E361CF8218A00DD0D2C /* FBSDKLoginKit.framework */; };
+		CE230E3A1CF8218A00DD0D2C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE230E371CF8218A00DD0D2C /* FBSDKShareKit.framework */; };
 		CEBAF1531CF76CDC0017A377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAF1521CF76CDC0017A377 /* AppDelegate.swift */; };
 		CEBAF1551CF76CDC0017A377 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAF1541CF76CDC0017A377 /* FirstViewController.swift */; };
 		CEBAF1571CF76CDC0017A377 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAF1561CF76CDC0017A377 /* SecondViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE230E351CF8218A00DD0D2C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		CE230E361CF8218A00DD0D2C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CE230E371CF8218A00DD0D2C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		CEBAF14F1CF76CDC0017A377 /* baseopp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baseopp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBAF1521CF76CDC0017A377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBAF1541CF76CDC0017A377 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -33,12 +39,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE230E391CF8218A00DD0D2C /* FBSDKLoginKit.framework in Frameworks */,
+				CE230E381CF8218A00DD0D2C /* FBSDKCoreKit.framework in Frameworks */,
+				CE230E3A1CF8218A00DD0D2C /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE230E331CF819B800DD0D2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE230E351CF8218A00DD0D2C /* FBSDKCoreKit.framework */,
+				CE230E361CF8218A00DD0D2C /* FBSDKLoginKit.framework */,
+				CE230E371CF8218A00DD0D2C /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		CEBAF1461CF76CDC0017A377 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +83,7 @@
 				CEBAF1561CF76CDC0017A377 /* SecondViewController.swift */,
 				CEBAF1581CF76CDC0017A377 /* Main.storyboard */,
 				CEBAF1661CF791630017A377 /* LoginViewController.swift */,
+				CE230E331CF819B800DD0D2C /* Frameworks */,
 				CEBAF15B1CF76CDC0017A377 /* Assets.xcassets */,
 				CEBAF15D1CF76CDC0017A377 /* LaunchScreen.storyboard */,
 				CEBAF1601CF76CDC0017A377 /* Info.plist */,
@@ -259,6 +280,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-4",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = baseopp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taiwoojo.baseopp;
@@ -270,6 +296,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-4",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = baseopp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taiwoojo.baseopp;
@@ -296,6 +327,7 @@
 				CEBAF1651CF76CDC0017A377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
