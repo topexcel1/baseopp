@@ -14,6 +14,8 @@
 		CEBAF15C1CF76CDC0017A377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAF15B1CF76CDC0017A377 /* Assets.xcassets */; };
 		CEBAF15F1CF76CDC0017A377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBAF15D1CF76CDC0017A377 /* LaunchScreen.storyboard */; };
 		CEBAF1671CF791630017A377 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAF1661CF791630017A377 /* LoginViewController.swift */; };
+		CED6238F1CF7E960007851DF /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED6238E1CF7E960007851DF /* Background.jpg */; };
+		CED623911CF7F1AC007851DF /* Background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED623901CF7F1AC007851DF /* Background2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CEBAF15E1CF76CDC0017A377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBAF1601CF76CDC0017A377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBAF1661CF791630017A377 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CED6238E1CF7E960007851DF /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Background.jpg; path = ../../../../../Volumes/KINGSTON/Background.jpg; sourceTree = "<group>"; };
+		CED623901CF7F1AC007851DF /* Background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Background2.jpg; path = ../../../../../Volumes/KINGSTON/Background2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				CEBAF1541CF76CDC0017A377 /* FirstViewController.swift */,
 				CEBAF1561CF76CDC0017A377 /* SecondViewController.swift */,
 				CEBAF1581CF76CDC0017A377 /* Main.storyboard */,
+				CED6238E1CF7E960007851DF /* Background.jpg */,
+				CED623901CF7F1AC007851DF /* Background2.jpg */,
 				CEBAF1661CF791630017A377 /* LoginViewController.swift */,
 				CEBAF15B1CF76CDC0017A377 /* Assets.xcassets */,
 				CEBAF15D1CF76CDC0017A377 /* LaunchScreen.storyboard */,
@@ -129,7 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBAF15F1CF76CDC0017A377 /* LaunchScreen.storyboard in Resources */,
+				CED6238F1CF7E960007851DF /* Background.jpg in Resources */,
 				CEBAF15C1CF76CDC0017A377 /* Assets.xcassets in Resources */,
+				CED623911CF7F1AC007851DF /* Background2.jpg in Resources */,
 				CEBAF15A1CF76CDC0017A377 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +304,7 @@
 				CEBAF1651CF76CDC0017A377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
